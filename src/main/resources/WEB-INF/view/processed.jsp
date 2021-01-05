@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,10 @@
 
 <%-- How param.studenName works??? --%>
 <p>Student name is: ${param.studentName}</p>
+
+<c:if test="${customMessage != nunl}">
+    <p>Custom message: ${customMessage}</p>
+</c:if>
 
 <a href="hello">Return to Hello Form</a>
 
