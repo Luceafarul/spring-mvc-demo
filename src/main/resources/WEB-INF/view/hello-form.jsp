@@ -14,7 +14,7 @@ Simple form
 
 <br><br>
 Custom message form
-<form action="custom-message" method="get">
+<form action="process-v2" method="get">
     <input type="text" name="studentName" placeholder="What's your name?"/>
     <input type="text" name="message" placeholder="Message"/>
     <input type="submit">

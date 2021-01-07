@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloController {
@@ -25,6 +26,21 @@ public class HelloController {
         var message = request.getParameter("message");
         var name = request.getParameter("studentName");
 
+        // Process
+        var result = message + " " + name.toUpperCase() + "!";
+
+        // Add result to model
+        model.addAttribute("customMessage", result);
+
+        return "processed";
+    }
+
+    @RequestMapping(value = "/process-v2", method = RequestMethod.GET)
+    public String processV2(
+        @RequestParam("message") String message,
+        @RequestParam("studentName") String name,
+        Model model
+    ) {
         // Process
         var result = message + " " + name.toUpperCase() + "!";
 
