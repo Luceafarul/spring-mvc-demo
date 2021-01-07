@@ -14,7 +14,7 @@
     <p>Custom message: ${customMessage}</p>
 </c:if>
 
-<a href="hello">Return to Hello Form</a>
+<a href="show-form">Return to Hello Form</a>
 
 </body>
 </html>

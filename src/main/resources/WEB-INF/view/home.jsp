@@ -5,7 +5,12 @@
 
 <hr>
 
-<a href="hello">Hello Form</a>
+<a href="hello/show-form">Hello Form</a>
+
+<br>
+<br>
+
+<a href="bye/show-form">Bye Form</a>
 
 </body>
 </html>
