@@ -7,7 +7,7 @@
 <h2>Student, this is Spring!</h2>
 
 <%-- How param.studenName works??? --%>
-<p>Student is confirmed: ${student.firstName} ${student.lastName}</p>
+<p>Student is confirmed: ${student.firstName} ${student.lastName} from ${student.country}</p>
 
 <a href="show-form">Return to Student Form</a>
 

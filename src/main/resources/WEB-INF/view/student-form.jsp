@@ -16,6 +16,14 @@
     <form:input path="lastName" type="text" name="lastName" placeholder="Last name"/>
     <br>
     <br>
+    <form:select path="country">
+        <form:option value="Ukraine" label="Ukraine"/>
+        <form:option value="Germany" label="Germany"/>
+        <form:option value="India" label="India"/>
+        <form:option value="USA" label="USA"/>
+    </form:select>
+    <br>
+    <br>
     <input type="submit" value="Submit">
 </form:form>
 
