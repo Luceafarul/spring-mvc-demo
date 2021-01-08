@@ -21,6 +21,6 @@ public class StudentController {
     @RequestMapping("/process")
     public String process(@ModelAttribute("student") Student student) {
         System.out.println(student);
-        return "confirm-page";
+        return "confirm-student";
     }
 }
