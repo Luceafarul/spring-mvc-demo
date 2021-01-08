@@ -21,6 +21,22 @@
     </form:select>
     <br>
     <br>
+    Select your favorite programming language:
+    <br>
+    Java <form:radiobutton path="favoriteProgrammingLanguage" value="Java"/>
+    Scala <form:radiobutton path="favoriteProgrammingLanguage" value="Scala"/>
+    Kotlin <form:radiobutton path="favoriteProgrammingLanguage" value="Kotlin"/>
+    JavaScript <form:radiobutton path="favoriteProgrammingLanguage" value="JavaScript"/>
+    TypeScript <form:radiobutton path="favoriteProgrammingLanguage" value="TypeScript"/>
+    <br>
+    <br>
+    Operating systems:
+    <br>
+    Linux <form:checkbox path="operatingSystems" value="Linux"/>
+    Mac OS <form:checkbox path="operatingSystems" value="Mac OS"/>
+    Windows <form:checkbox path="operatingSystems" value="Windows"/>
+    <br>
+    <br>
     <input type="submit" value="Submit">
 </form:form>
 
