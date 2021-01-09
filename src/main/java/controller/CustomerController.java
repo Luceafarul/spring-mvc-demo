@@ -2,6 +2,8 @@ package controller;
 
 import javax.validation.Valid;
 import model.Customer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/customers")
 public class CustomerController {
 
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @RequestMapping(value = "/show-form", method = RequestMethod.GET)
     public String form(Model model) {
         model.addAttribute("customer", new Customer());
@@ -27,6 +31,8 @@ public class CustomerController {
         @Valid @ModelAttribute("customer") Customer customer,
         BindingResult bindingResult
     ) {
+        logger.info("Binding result: {}", bindingResult);
+
         if (bindingResult.hasErrors()) {
             return "customer-form";
         } else {
