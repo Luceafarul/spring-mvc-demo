@@ -12,6 +12,8 @@
 
 <p>Customer free pass: ${customer.freePasses}</p>
 
+<p>Customer postal code: ${customer.postalCode}</p>
+
 <a href="show-form">Return to Customer Form</a>
 
 </body>

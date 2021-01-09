@@ -1,14 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Customer Form</title>
-    <style>
-      .error {
-        color: red
-      }
-    </style>
-</head>
 <body>
 
 <br>
@@ -30,8 +22,20 @@
     <form:errors path="freePasses" cssClass="error"/>
     <br>
     <br>
+    Postal code: <form:input path="postalCode" type="text" name="postalCode" placeholder="Postal code"/>
+    <form:errors path="postalCode" cssClass="error"/>
+    <br>
+    <br>
     <input type="submit" value="Submit">
 </form:form>
 
 </body>
+<head>
+    <title>Customer Form</title>
+    <style>
+      .error {
+        color: red
+      }
+    </style>
+</head>
 </html>
