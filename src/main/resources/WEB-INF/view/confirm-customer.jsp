@@ -14,6 +14,8 @@
 
 <p>Customer postal code: ${customer.postalCode}</p>
 
+<p>Customer course code: ${customer.courseCode}</p>
+
 <a href="show-form">Return to Customer Form</a>
 
 </body>
