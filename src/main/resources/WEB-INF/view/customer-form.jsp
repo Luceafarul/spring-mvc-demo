@@ -26,6 +26,10 @@
     <form:errors path="lastName" cssClass="error"/>
     <br>
     <br>
+    Free pass: <form:input path="freePasses" type="text" name="freePasses" placeholder="Free passes"/>
+    <form:errors path="freePasses" cssClass="error"/>
+    <br>
+    <br>
     <input type="submit" value="Submit">
 </form:form>
 

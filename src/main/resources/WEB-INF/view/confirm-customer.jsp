@@ -10,6 +10,8 @@
 <%-- How param.studenName works??? --%>
 <p>Customer is confirmed: ${customer.firstName} ${customer.lastName}</p>
 
+<p>Customer free pass: ${customer.freePasses}</p>
+
 <a href="show-form">Return to Customer Form</a>
 
 </body>
